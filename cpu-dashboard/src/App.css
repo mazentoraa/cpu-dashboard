@@ -1,0 +1,257 @@
+:root{
+  font-size: 16px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+}
+.login-page{
+  background-color: #1a1a1a;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.login-page > h1{
+  align-self: center;
+  text-align: center;
+  margin-bottom: 0;
+}
+.login-page > input{
+  height: 2.5rem;
+  width: 10rem;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.login-page > button{
+  margin: 0.8rem;
+  border: 1px solid #fff;
+}
+.login-page > button:hover{
+  background-color:#ccc;
+  color:#1a1a1a;
+}
+.login-page > .login-error-message{
+  color: rgb(189, 4, 4);
+  font-size: 0.8rem;
+  align-self: center;
+}
+body{
+  background-image: url("/img/bgDesktop.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  place-items: left;
+  min-width: 320px;
+  min-height: 100vh;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.dashboard{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  gap: 0.8rem;
+}
+.add-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.add-list-input{
+  padding: 0.5rem;
+  height: 1.4rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.add-list-button{
+  background-color: #ccc;
+  font-size: 0.9rem;
+  width: 16rem;
+  color: #16172c;
+}
+.add-list-button:hover{
+  border: 2px solid black;
+}
+.list{
+  width: 16rem;
+  height: fit-content;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  padding: 0.6rem 0;
+}
+.card-header{
+  width: 90%;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 90%;
+  margin: 5px;
+}
+.card{
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  gap: 5px;
+}
+.card-name{
+  border: none;
+  background-color: #1a1a1a;
+  text-align: justify;
+  width: 13.5rem;
+  min-height: 2.5rem;
+  font-size: 0.8rem;
+  padding-left: 10px;
+  border-radius: 10px 0 0 10px;
+  font-family: inherit;
+}
+.card-name:focus{
+  border: none;
+}
+.card:hover{
+  border-color:aliceblue ;
+  border: 1px solid;
+}
+.card-header input{
+  background-color: transparent;
+  width: 14rem;
+  height: 2rem;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+}
+.card-header > div{
+  display: flex;
+  justify-content: space-between;
+}
+.card-header > div > button{
+  width: 0.5rem;
+  height: fit-content;
+  align-content: center;
+  padding: 0;
+  background: none;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.card-header > div > button:hover{
+  border: none;
+}
+.open-card-button{
+  height: 1.5rem;
+  width: 1.2rem;
+  align-self: center;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.card-footer{
+  width: 90%;
+}
+.add-card-button{
+  width: 100%;
+  font-size: 0.9rem;
+}
+.card-opened-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.card-opened-overlay.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+.card-opened{
+  background-color: #1a1a1a;
+  width: 70%;
+  min-height: 60%;
+  padding: 1rem;
+  border-radius: 10px;
+  position: absolute;
+}
+.card-opened > .close-button{
+  position: inherit;
+  left: 100%;
+}
+.card-opened .inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+.problem-link{
+  height: 1.8rem;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+.modify-link-button{
+  font-size: 0.6rem;
+}
+.problem-link-valid{
+  height: 1.8rem;
+  padding: 5px;
+  text-decoration: none;
+  color: #646cff;
+}
+.description{
+  min-height: 10rem;
+  height: fit-content;
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+}
+.delete-card-btn{
+  align-self: flex-end;
+  background-color:rgb(77, 0, 0);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 767px){
+  body{
+    background-image: url('/img/bgMobile.png');
+  }
+  .dashboard{
+    justify-content: center;
+  }
+}
