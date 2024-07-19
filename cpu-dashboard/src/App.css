@@ -111,6 +111,7 @@ button:focus-visible {
 }
 .card-header{
   width: 90%;
+  color: white;
 }
 .cards{
   display: flex;
@@ -124,6 +125,7 @@ button:focus-visible {
   display: flex;
   justify-content: space-between;
   background-color: #1a1a1a;
+  color: white;
   gap: 5px;
 }
 .card-name{
@@ -269,4 +271,5 @@ button:focus-visible {
   .dashboard{
     justify-content: center;
   }
+  
 }
