@@ -109,6 +109,12 @@ button:focus-visible {
   border-radius: 0.8rem;
   padding: 0.6rem 0;
 }
+.list-name{
+  color: white;
+}
+.card-name{
+  color: white;
+}
 .card-header{
   width: 90%;
   color: white;
@@ -272,9 +278,9 @@ button:focus-visible {
     justify-content: center;
   }
   .list-name{
-    color: white !important;
+    color: white;
   }
   .card-name{
-    color: white !important;
+    color: white;
   }
 }
