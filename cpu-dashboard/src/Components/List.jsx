@@ -41,6 +41,7 @@ export default function List({list, deleteList}){
                 <div className="card-header">
                     <div>
                         <input
+                            className="list-name"
                             placeholder="Your name"
                             value={list.name}
                             readOnly

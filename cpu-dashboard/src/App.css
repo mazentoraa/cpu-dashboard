@@ -271,5 +271,10 @@ button:focus-visible {
   .dashboard{
     justify-content: center;
   }
-  
+  .list-name{
+    color: white !important;
+  }
+  .card-name{
+    color: white !important;
+  }
 }
