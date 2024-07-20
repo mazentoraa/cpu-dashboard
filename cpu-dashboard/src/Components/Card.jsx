@@ -30,6 +30,7 @@ const Card = ({ card, updateCardContent, deleteCard }) => {
                 />
                 <img
                     onClick={openCard}
+                    title = "Open this card"
                     className='open-card-button'
                     src="/img/openCard.png"
                     alt="Open Card"

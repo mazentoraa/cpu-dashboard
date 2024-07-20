@@ -232,21 +232,25 @@ button:focus-visible {
 }
 .card-opened{
   background-color: #1a1a1a;
-  width: 70%;
+  width: 80%;
+  width: fit-content;
   min-height: 60%;
+  height: fit-content;
   padding: 1rem;
   border-radius: 10px;
-  position: absolute;
 }
 .card-opened > .close-button{
-  position: inherit;
-  left: 100%;
+  position: relative;
+  left: 90%;
 }
 .card-opened .inputs{
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  min-width: 35rem;
   width: 100%;
+  height: fit-content;
 }
 .problem-link{
   height: 1.8rem;
@@ -269,6 +273,7 @@ button:focus-visible {
   border-radius: 3px;
   border: none;
   padding: 5px;
+  position: relative;
 }
 .delete-card-btn{
   align-self: flex-end;
@@ -303,5 +308,8 @@ button:focus-visible {
   }
   .card-name{
     color: white;
+  }
+  .card-opened .inputs{
+    min-width: 90%;
   }
 }

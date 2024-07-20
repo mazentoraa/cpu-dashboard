@@ -64,13 +64,13 @@ export default function CardOpened({card, updateCardContent, deleteCard, onClose
                 <div className='inputs'>
                 {isValidLink ? (<div className='link'>
                         <a href={problink} target="_blank" rel="noopener noreferrer" className='problem-link-valid'>
-                            Click here to see the problem.
+                            Click here to go to the link.
                         </a><button className='modify-link-button' onClick={modifyLink}>Modify</button>
                         </div>
                     ) : (
                         <input
                             className='problem-link'
-                            placeholder='Link to the problem'
+                            placeholder='Link to your submission'
                             value={problink}
                             onChange={handleProbLinkChange}
                             onPaste={handlePaste}
@@ -79,7 +79,7 @@ export default function CardOpened({card, updateCardContent, deleteCard, onClose
                     )}
                     <textarea
                     className='description'
-                    placeholder='Description'
+                    placeholder='Paste your solution here'
                     value={description}
                     onChange={handleDescriptionChange}
                 />
