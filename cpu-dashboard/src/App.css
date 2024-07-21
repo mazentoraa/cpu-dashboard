@@ -78,6 +78,7 @@ button:focus-visible {
   display: flex;
   flex-wrap: wrap;
   margin: 1rem;
+  margin-left: 2%;
   gap: 0.8rem;
 }
 .add-list{
@@ -102,7 +103,7 @@ button:focus-visible {
   border: 2px solid black;
 }
 .list{
-  width: 16rem;
+  width: 17rem;
   height: fit-content;
   max-height: 20rem;
   background-color: #000;
@@ -147,27 +148,30 @@ button:focus-visible {
   width: 90%;
   margin: 5px;
 }
+.cards-droppable{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .card{
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   background-color: #1a1a1a;
   color: white;
+  width: 14.7rem;
+  min-height: 2.7rem;
   gap: 5px;
 }
 .card-name{
   border: none;
   background-color: #1a1a1a;
   text-align: justify;
-  width: 13.5rem;
-  min-height: 2.5rem;
+  align-self: center;
+  height: 1.4rem;
   font-size: 0.8rem;
-  padding-left: 10px;
-  border-radius: 10px 0 0 10px;
+  margin-left: 10px;
   font-family: inherit;
-}
-.card-name:focus{
-  border: none;
 }
 .card:hover{
   border-color:aliceblue ;
