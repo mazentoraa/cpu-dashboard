@@ -7,10 +7,20 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 
 function App() {
   const [connected, setConnected] = useState(false)
+  const [room, setRoom] = useState("none")
+  const [database, setDatabase] = useState(null);
 
   return (
     <>
-      {connected?  <Dashboard/>: <Login  setConnected={setConnected}/>}
+      {connected? (
+        <Dashboard database={database}/>
+        ) : (
+        <Login  
+          setConnected={setConnected}  
+          room={room} 
+          setRoom={setRoom} 
+          setDatabase={setDatabase}/>
+        )}
     </>
   )
 }

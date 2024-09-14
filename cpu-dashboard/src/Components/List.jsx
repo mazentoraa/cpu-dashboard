@@ -1,11 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import Card from "./Card";
 import { ref, set } from 'firebase/database';
-import { database } from '../firebase';
 import { v4 as uuidv4 } from 'uuid';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
-export default function List({list, deleteList}){
+export default function List({list, deleteList, database}){
     const [cards, setCards] = useState(list.cards || [])
     const [isAddingCard, setIsAddingCard] = useState(false);
     const listContainerRef = useRef(null);

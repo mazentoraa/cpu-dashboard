@@ -1,5 +1,5 @@
 // src/firebase.js
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApps, getApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
@@ -12,7 +12,29 @@ const firebaseConfig = {
     appId: "1:147174268783:web:9f813b3418413dfc53129a"
   };
 
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
+const firebaseConfigPublic = {
+  apiKey: "AIzaSyAtK-v5vGTaBJuyX6S9naQ-v9DuT-wEvGY",
+  authDomain: "cpu-dashboard.firebaseapp.com",
+  databaseURL: "https://cpu-dashboard-default-rtdb.firebaseio.com",
+  projectId: "cpu-dashboard",
+  storageBucket: "cpu-dashboard.appspot.com",
+  messagingSenderId: "148599994561",
+  appId: "1:148599994561:web:78da6c121df33784047c40"
+};
+  
+// Function to initialize Firebase App safely
+function initializeFirebaseApp(config, name) {
+  // Check if the app with this name already exists
+  if (!getApps().some(app => app.name === name)) {
+    return initializeApp(config, name);
+  } else {
+    return getApp(name); // Return the already initialized app
+  }
+}
 
-export { database };
+const app = initializeFirebaseApp(firebaseConfig, "app");
+const appPublic = initializeFirebaseApp(firebaseConfigPublic, "appPublic");
+const databaseSenior = getDatabase(app);
+const databasePublic = getDatabase(appPublic);
+
+export { databaseSenior, databasePublic };
