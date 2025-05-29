@@ -30,7 +30,7 @@ A minimalist collaborative tool (like Trello) developed in just **one day** by t
 
 ## 📽️ Demo Video
 
-▶️ [Watch the full demo]([https://your-demo-link.com](https://drive.google.com/file/d/1b9suKsEI6Z2P8M8KvQWUM_npWZhEPNtO/view?usp=sharing))
+▶️ [Watch the full demo](https://drive.google.com/file/d/1b9suKsEI6Z2P8M8KvQWUM_npWZhEPNtO/view?usp=sharing)
 
 ## 💡 Why I Built It
 
