@@ -1,6 +1,6 @@
 # 🧠 CPU Dashboard
 
-A minimalist collaborative tool (like Trello) developed in just **one day** by the [CPU ISIMM Club]((https://www.linkedin.com/in/cpu-isimm-068816218)) to **manage resource sharing and problem submissions** efficiently — with **no user limits**.
+A minimalist collaborative tool (like Trello) developed in just **one day** for the [CPU ISIMM Club]((https://www.linkedin.com/in/cpu-isimm-068816218)) to **manage resource sharing and problem submissions** efficiently — with **no user limits**.
 
 > Platforms like Trello restrict collaboration to 10 users on free plans. CPU Dashboard is your **no-limit alternative**, ready to use instantly.
 
